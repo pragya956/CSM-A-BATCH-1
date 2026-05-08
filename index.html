@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minimal Vibe</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .container {
+        text-align: center;
+        backdrop-filter: blur(15px);
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        opacity: 0.9;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 30px;
+        background: white;
+        color: #764ba2;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        transform: scale(1.1);
+        background: #f1f1f1;
+    }
+
+    .socials {
+        margin-top: 25px;
+    }
+
+    .socials a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .socials a:hover {
+        color: #ffd369;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Hey, I'm K.Praya ✨</h1>
+    <p>Simple. Clean. Beautiful.</p>
+    <button class="btn">Explore</button>
+
+    <div class="socials">
+        <a href="https://pragya2608das.github.io/Portfolio/">Portfolio</a>
+        <a href="https://www.linkedin.com/in/karnean-pragya/">LinkedIn</a>
+        <a href="github.com/pragya956">GitHub</a>
+    </div>
+</div>
+
+</body>
+</html>
